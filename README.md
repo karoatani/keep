@@ -6,20 +6,31 @@ This is the backend api for keep, it includes various features like:
 - [x] Advanced search Feature, etc
 
 # How to run locally
- To run locally, first of all clone this repo
- -- code block
+To run locally, first of all clone this repo
+ ```
+git clone https://github.com/karoatani/keep.git
+ ```
 
- navigate into project directory
- -- code block
+Navigate into project directory
+ ```
+cd keep
+ ```
 
- Install required dependencies
- -- code block
+Install required dependencies
+ ```
+pipenv install
+ ```
 
- Create migrations and migrate to database
- -- code block
+Run migrations
+```
+python manage.py makemigrations
+python manage.py migrate
+```
 
- run development server
- --- code block
+Start development server
+```
+python manage.py runserver
+```
 
 
 # Endpoints and various response code
