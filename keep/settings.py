@@ -168,16 +168,17 @@ DJOSER = {
         "http://127.0.0.1:8000/home",
         "http://127.0.0.1:8000/login",
     ],
-    "SERIALIZERS": {},
+    "SERIALIZERS": {"user_create": "core.serializers.UserCreateSerializer"},
 }
 AUTHENTICATION_BACKENDS = (
     "social_core.backends.google.GoogleOAuth2",
     "django.contrib.auth.backends.ModelBackend",
 )
-SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = (
-    "146876970536-fv9l9tdk853lskfg1ntv3qkdhgt41c85.apps.googleusercontent.com"
-)
-SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = "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"
+# SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = (
+#     "146876970536-fv9l9tdk853lskfg1ntv3qkdhgt41c85.apps.googleusercontent.com"
+# )
+# SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = "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"
+
 SOCIAL_AUTH_GOOGLE_OAUTH2_SCOPE = [
     "https://www.googleapis.com/auth/userinfo.email",
     "https://www.googleapis.com/auth/userinfo.profile",

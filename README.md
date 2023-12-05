@@ -1,8 +1,9 @@
 # Intoduction
 This is the backend api for keep, it includes various features like:
 - [x] Robust authentication system; including social login 
-- [x] Endpoints for managing users
-- [x] Endpoints for creating, updatingand managing notes
+- [x] Managing users
+- [x] Creating, Updatingand managing notes
+- [x] Testing
 - [x] Advanced search Feature, etc
 
 # How to run locally
@@ -37,10 +38,12 @@ python manage.py runserver
 
 Here are the various endpoint provided by the keep api
 
-
-/admin
-/note
-/auth
+| Endpoint | description | Methods | Response | 
+| -------- | -------- | -------- | -------- |
+| /admin   | Access the admin panel   | Cell 3   | Cell2 |
+| /user   | Managing users   | Cell 6   | Cell |
+| /auth   | Authenticating user   | Cell 6   | Cell |
+| /note   | Managing notes   | Cell 6   | Cell |
 
 
 
