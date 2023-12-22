@@ -174,6 +174,7 @@ AUTHENTICATION_BACKENDS = (
     "social_core.backends.google.GoogleOAuth2",
     "django.contrib.auth.backends.ModelBackend",
 )
+#ToDo: replace with environment variables
 # SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = (
 #     "146876970536-fv9l9tdk853lskfg1ntv3qkdhgt41c85.apps.googleusercontent.com"
 # )
